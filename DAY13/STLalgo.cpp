@@ -13,7 +13,7 @@ int main()
     v.push_back(7);
     v.push_back(9);
     
-    cout<<"Finding 6 : "<<binary_search(v.begin(),v.end(),6)<<endl;
+    cout<<"Finding 6   : " <<binary_search(v.begin(),v.end(),6)<<endl;
     cout<<"Lower bound : " <<lower_bound(v.begin(),v.end(),9)-v.begin()<<endl;
     cout<<"Upper bound : " <<upper_bound(v.begin(),v.end(),7)-v.begin()<<endl;
 

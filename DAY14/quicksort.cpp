@@ -82,7 +82,7 @@ int main()
     cout<<"The sorted array : "<<endl;
     for(int j=0;j<n;j++)
     {
-        cout<<a[j]<<endl;
+        cout<<a[j]<<" ";
     }
 
     return 0;

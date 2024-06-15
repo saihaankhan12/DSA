@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void bsearch(int a[],int low, int high, int key,int n)
+int bsearch(int a[],int low, int high, int key,int n)
 {
     int mid=0;  high = n - 1;
     while(low<=high)
@@ -22,6 +22,7 @@ void bsearch(int a[],int low, int high, int key,int n)
             low = mid + 1;
         }
     }
+
 }
 
 
@@ -44,7 +45,11 @@ int main()
     cout<<"Enter key "<<endl;
     cin>>key;
 
-    bsearch( a, low , high , key , n );
+    int x = bsearch( a, low , high , key , n );
+    if(x == -1)
+    {
+        cout<<"Not found";
+    }
 
     return 0;
 }
